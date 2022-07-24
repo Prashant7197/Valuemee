@@ -1,0 +1,847 @@
+{% extends 'base.html' %}
+{% block title %}
+Valuemee
+{% endblock title %}
+
+
+{% load static %}
+
+
+    <!-- loader start -->
+    <div class="loading-text">
+        <div>
+            <h1 class="animate">Loading</h1>
+        </div>
+    </div>
+    <!-- loader end -->
+
+
+    <!-- header section start -->
+    {% block content %}
+
+    
+
+    <!-- home section start -->
+    <section class="home-section overflow-hidden">
+        <img src="{% static 'images/company-landing/home-bg.png' %}" class="img-fluid  bg-img" alt="">
+        <div class="home-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 order-lg-2">
+                        <div class="content-screen">
+                            <div class="main-screen">
+                                <img src="{% static 'images/company-landing/home-effect/img-1.svg' %}" alt=""
+                                    class="img-fluid  wow zoomIn" data-wow-delay="0.20s" style="border-radius:25px;">
+                            </div>
+                            <div class="home-effect">
+                                
+                                <img src="{% static 'images/company-landing/home-effect/img-3.svg' %}" alt="" height="350" width="300"
+                                    class="img-fluid  user-round wow zoomIn" data-wow-delay="0.50s">
+                                
+                                    <img src="{% static 'images/company-landing/home-effect/icon.svg' %}" alt=""
+                                    class="img-fluid  heart wow zoomIn" data-wow-delay="0.40s">
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 order-lg-1">
+                        <div class="content">
+                            <div>
+                                <h1>Get Flat  <span>60%</span> On First Consultation</h1>
+                                <p>Here we provide best facilty to you regarding your health.
+                                Our Doctors and teams are always there to help you out.</p>
+                                <a href="#" class="btn btn-solid btn-lg">Find Doctors Nearby</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="animation-home">
+            <div class="cross"></div>
+            <div class="cross cross1"></div>
+            <div class="tringle"></div>
+            <div class="tringle tringle1"></div>
+            <div class="circle"></div>
+            <div class="circle circle1"></div>
+        </div>
+    </section>
+    <!-- home section end -->
+
+
+    <!-- feature section start -->
+    <section class="feature-section section-pt-space sm-pb-space overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-sec">
+                        <h4>our features</h4>
+                        <h3>we provide best feature</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 mobile-w100">
+                    <div class="feature-box">
+                        <div class="icon-box">
+                            <img src="{% static 'images/company-landing/icon/1.svg' %}"
+                                class="img-fluid " alt="">
+                        </div>
+                        <div class="feature-content">
+                            <h3>Excellent Service</h3>
+                            <p>We Provide Clean and better interface for easy to use application.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 mobile-w100">
+                    <div class="feature-box">
+                        <div class="icon-box">
+                            <img src="{% static 'images/company-landing/icon/2.svg' %}"
+                                class="img-fluid " alt="">
+                        </div>
+                        <div class="feature-content">
+                            <h3>well managed</h3>
+                            <p>We serve this very much properly, Easy and simple to understand.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 mobile-w100">
+                    <div class="feature-box">
+                        <div class="icon-box">
+                            <img src="{% static 'images/company-landing/icon/3.svg' %}"
+                                class="img-fluid " alt="">
+                        </div>
+                        <div class="feature-content">
+                            <h3>Amazing Results</h3>
+                            <p>Fully responsive design for user, quick and easy to operate in device.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 mobile-w100">
+                    <div class="feature-box">
+                        <div class="icon-box">
+                            <img src="{% static 'images/company-landing/icon/4.svg' %}"
+                                class="img-fluid " alt="">
+                        </div>
+                        <div class="feature-content">
+                            <h3>24*7 SUPPORT</h3>
+                            <p>Our support service team are always there to support you and guide you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 mobile-w100">
+                    <div class="feature-box">
+                        <div class="icon-box">
+                            <img src="{% static 'images/company-landing/icon/5.svg' %}"
+                                class="img-fluid " alt="">
+                        </div>
+                        <div class="feature-content">
+                            <h3>Easy to Use</h3>
+                            <p>We provide easy integration for easy to understand our application.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 mobile-w100">
+                    <div class="feature-box">
+                        <div class="icon-box">
+                            <img src="{% static 'images/company-landing/icon/6.svg' %}"
+                                class="img-fluid " alt="">
+                        </div>
+                        <div class="feature-content">
+                            <h3>Whole day service</h3>
+                            <p>We provide one more smart feature supports day and night mode.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="animation-home">
+            <div class="cross"></div>
+            <div class="cross cross1"></div>
+            <div class="tringle"></div>
+            <div class="tringle tringle1"></div>
+            <div class="circle"></div>
+        </div>
+    </section>
+    <!-- feature section end -->
+
+
+    <!-- register section start -->
+    <section class="section-pb-space section-pt-space single-feature-section landing-bg overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-sec">
+                        <h4>register in a minute</h4>
+                        <h3>register to join Valuemee</h3>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="vector-section mb--65">
+                        <img src="{% static 'images/company-landing/feature-vector/register/phone.svg' %}"
+                            class="img-fluid  main-img wow zoomIn" data-wow-delay="0.20s" alt="">
+                        <img src="{% static 'images/company-landing/feature-vector/register/lock.svg' %}"
+                            class="img-fluid  lock-img wow zoomIn" data-wow-delay="0.30s" alt="">
+                        <img src="{% static 'images/company-landing/feature-vector/register/thumbs-up.svg' %}"
+                            class="img-fluid  thumb-img wow zoomIn" data-wow-delay="0.40s" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="feature-content wow fadeInRight">
+                        <div>
+                            <h3 class="title">Register To Enjoy This Application</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum blanditiis atque cum
+                                iure nihil, ipsa commodi veniam, nemo ipsam sed aliquam aliquid modi totam. Quia
+                                architecto nesciunt facere consectetur laudantium.</p>
+                            <ul class="feature-lisiting">
+                                <li>
+                                    <img src="{% static 'svg/checkmark.svg' %}" class="img-fluid " alt="">
+                                    Easy to Register with your Device.
+                                </li>
+                                <li>
+                                    <img src="{% static 'svg/checkmark.svg' %}" class="img-fluid " alt="">
+                                    Register in a minute by your Email ID
+                                </li>
+                                <li>
+                                    <img src="{% static 'svg/checkmark.svg' %}" class="img-fluid " alt="">
+                                    Your Data is Secure with us.
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-solid btn-md">register now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="animation-home">
+            <div class="cross"></div>
+            <div class="cross cross1"></div>
+            <div class="tringle"></div>
+            <div class="tringle tringle1"></div>
+            <div class="circle"></div>
+            <div class="circle circle1"></div>
+        </div>
+    </section>
+    <!-- register section end -->
+
+
+    <!-- get in touch section start -->
+    <section class="section-pb-space section-pt-space single-feature-section overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-sec">
+                        <h4>find new friends</h4>
+                        <h3>Our Approach</h3>
+                    </div>
+                </div>
+                <div class="col-lg-7 order-lg-2">
+                    <div class="vector-section">
+                        <img src="{% static 'images/company-landing/feature-vector/our-approach.svg' %}"
+                            class="img-fluid  wow zoomIn" data-wow-delay="0.20s" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5 order-lg-1">
+                    <div class="feature-content wow fadeInLeft" data-wow-delay="0.30s">
+                        <div>
+                            <h3 class="title">talk with your loved once</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour.</p>
+                            <a href="#" class="btn btn-solid btn-md">chat now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="animation-home">
+            <div class="cross"></div>
+            <div class="cross cross1"></div>
+            <div class="tringle"></div>
+            <div class="tringle tringle1"></div>
+            <div class="circle"></div>
+            <div class="circle circle1"></div>
+        </div>
+    </section>
+    <!-- get in touch section end -->
+
+    
+    <!-- active user section start -->
+    <section class="section-pb-space section-pt-space single-feature-section landing-bg overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-sec">
+                        <h4>active users</h4>
+                        <h3>more then 100k active users</h3>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="vector-section">
+                        <img src="{% static 'images/company-landing/feature-vector/feature1.svg' %}"
+                            class="img-fluid  active-img wow zoomIn" data-wow-delay="0.20s" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="feature-content wow fadeInRight" data-wow-delay="0.25s">
+                        <div>
+                            <h3 class="title">Register To Enjoy This Application</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum blanditiis atque cum
+                                iure nihil, ipsa commodi veniam, nemo ipsam sed aliquam aliquid modi totam. Quia
+                                architecto nesciunt facere consectetur laudantium.</p>
+                            <ul class="feature-lisiting">
+                                <li>
+                                    <img src="{% static 'svg/checkmark.svg' %}" class="img-fluid " alt="">
+                                    Easy to Register with your Device.
+                                </li>
+                                <li>
+                                    <img src="{% static 'svg/checkmark.svg' %}" class="img-fluid " alt="">
+                                    Register in a minute by your Email ID
+                                </li>
+                                <li>
+                                    <img src="{% static 'svg/checkmark.svg' %}" class="img-fluid " alt="">
+                                    Your Data is Secure with us.
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-solid btn-md">register now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="animation-home">
+            <div class="cross"></div>
+            <div class="cross cross1"></div>
+            <div class="tringle"></div>
+            <div class="tringle tringle1"></div>
+            <div class="circle"></div>
+            <div class="circle circle1"></div>
+        </div>
+    </section>
+    <!-- active user section end -->
+
+<!-- Doctors start -->
+{% comment %} <section class="default-space-lg landing-bg section-pt-space section-pb-space">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="title-sec">
+                    <h4>Valuemee</h4>
+                    <h3>WelcomevOur New Life Savers</h3>
+                </div>
+            </div>
+            {% for ps in posts %}
+                    <div class="col-md-3">
+                        <div class="team-section">
+                            <a href="doctor.html">
+                            {% if ps.image %}
+                            <div class="team-image">
+                                <img src="{{ ps.image.url }}" class="img-fluid  bg-img"
+                                    alt="">
+                            </div>
+                            {% endif %}
+                            </a>
+                            <div class="team-content">
+                                <a href="doctor.html"><h3><img src="{% static 'images/doctor/doc.svg' %}">&nbsp;&nbsp;{{ ps.name }}</h3>
+                                <h6><img src="{% static 'images/doctor/doc-deg.svg' %}">&nbsp;&nbsp;{{ ps.profiles }}</h6>
+                                <hr>
+                                <h6>Experience<strong>&nbsp;{{ ps.experience }} Years</strong></h6></a>
+                                <hr>
+                                <div class="team-social">
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/facebook.svg' %}">
+                                    </a>
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/whatsapp.svg' %}">
+                                    </a>
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/twitter.svg' %}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <div class="col-md-3">
+                        <div class="team-section">
+                            <a href="doctor.html">
+                            <div class="team-image">
+                                <img src="{% static 'images/doctor/doc-2.jpg' %}" class="img-fluid  bg-img"
+                                    alt="">
+                            </div>
+                        </a>
+                            <div class="team-content">
+                                <a href="doctor.html"><h3><img src="{% static 'images/doctor/doc.svg' %}">&nbsp;&nbsp;Julia Holmes</h3>
+                                <h6><img src="{% static 'images/doctor/doc-deg.svg' %}">&nbsp;&nbsp;MBBS</h6>
+                                <hr>
+                                <h6>Experience<strong>&nbsp;2 Years</strong></h6></a>
+                                <hr>
+                                <div class="team-social">
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/facebook.svg' %}">
+                                    </a>
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/whatsapp.svg' %}">
+                                    </a>
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/twitter.svg' %}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team-section">
+                            <a href="doctor.html">
+                            <div class="team-image">
+                                <img src="{% static 'images/doctor/doc-4.jpg' %}" class="img-fluid  bg-img"
+                                    alt="">
+                            </div>
+                        </a>
+                            <div class="team-content">
+                                <a href="doctor.html"><h3><img src="{% static 'images/doctor/doc.svg' %}">&nbsp;&nbsp;Julia Holmes</h3>
+                                <h6><img src="{% static 'images/doctor/doc-deg.svg' %}">&nbsp;&nbsp;MBBS</h6>
+                                <hr>
+                                <h6>Experience<strong>&nbsp;10 Years</strong></h6></a>
+                                <hr>
+                                <div class="team-social">
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/facebook.svg' %}">
+                                    </a>
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/whatsapp.svg' %}">
+                                    </a>
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/twitter.svg' %}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team-section">
+                            <a href="doctor.html">
+                            <div class="team-image">
+                                <img src="{% static 'images/doctor/doc-3.jpg' %}" class="img-fluid  bg-img"
+                                    alt="">
+                            </div>
+                        </a>
+                            <div class="team-content">
+                                <a href="doctor.html"><h3><img src="{% static 'images/doctor/doc.svg' %}">&nbsp;&nbsp;Julia Holmes</h3>
+                                <h6><img src="{% static 'images/doctor/doc-deg.svg' %}">&nbsp;&nbsp;MBBS</h6>
+                                <hr>
+                                <h6>Experience<strong>&nbsp;15 Years</strong></h6></a>
+                                <hr>
+                                <div class="team-social">
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/facebook.svg' %}">
+                                    </a>
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/whatsapp.svg' %}">
+                                    </a>
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/twitter.svg' %}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team-section">
+                            <a href="doctor.html">
+                            <div class="team-image">
+                                <img src="{% static 'images/doctor/doc-1.jpg' %}" class="img-fluid  bg-img"
+                                    alt="">
+                            </div>
+                        </a>
+                            <div class="team-content">
+                                <a href="doctor.html"><h3><img src="{% static 'images/doctor/doc.svg' %}">&nbsp;&nbsp;Julia Holmes</h3>
+                                <h6><img src="{% static 'images/doctor/doc-deg.svg' %}">&nbsp;&nbsp;MBBS</h6>
+                                <hr>
+                                <h6>Experience<strong>&nbsp;3 Years</strong></h6></a>
+                                <hr>
+                                <div class="team-social">
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/facebook.svg' %}">
+                                    </a>
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/whatsapp.svg' %}">
+                                    </a>
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/twitter.svg' %}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team-section">
+                            <a href="doctor.html">
+                            <div class="team-image">
+                                <img src="{% static 'images/doctor/doc-2.jpg' %}" class="img-fluid  bg-img"
+                                    alt="">
+                            </div>
+                        </a>
+                            <div class="team-content">
+                                <a href="doctor.html"><h3><img src="{% static 'images/doctor/doc.svg' %}">&nbsp;&nbsp;Julia Holmes</h3>
+                                <h6><img src="{% static 'images/doctor/doc-deg.svg' %}">&nbsp;&nbsp;MBBS</h6>
+                                <hr>
+                                <h6>Experience<strong>&nbsp;2 Years</strong></h6></a>
+                                <hr>
+                                <div class="team-social">
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/facebook.svg' %}">
+                                    </a>
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/whatsapp.svg' %}">
+                                    </a>
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/twitter.svg' %}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team-section">
+                            <a href="doctor.html">
+                            <div class="team-image">
+                                <img src="{% static 'images/doctor/doc-4.jpg' %}" class="img-fluid  bg-img"
+                                    alt="">
+                            </div>
+                        </a>
+                            <div class="team-content">
+                                <a href="doctor.html"><h3><img src="{% static 'images/doctor/doc.svg' %}">&nbsp;&nbsp;Julia Holmes</h3>
+                                <h6><img src="{% static 'images/doctor/doc-deg.svg' %}">&nbsp;&nbsp;MBBS</h6>
+                                <hr>
+                                <h6>Experience<strong>&nbsp;10 Years</strong></h6></a>
+                                <hr>
+                                <div class="team-social">
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/facebook.svg' %}">
+                                    </a>
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/whatsapp.svg' %}">
+                                    </a>
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/twitter.svg' %}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="team-section">
+                            <a href="doctor.html">
+                            <div class="team-image">
+                                <img src="{% static 'images/doctor/doc-3.jpg' %}" class="img-fluid  bg-img"
+                                    alt="">
+                            </div>
+                        </a>
+                            <div class="team-content">
+                                <a href="doctor.html"><h3><img src="{% static 'images/doctor/doc.svg' %}">&nbsp;&nbsp;Julia Holmes</h3>
+                                <h6><img src="{% static 'images/doctor/doc-deg.svg' %}">&nbsp;&nbsp;MBBS</h6>
+                                <hr>
+                                <h6>Experience<strong>&nbsp;15 Years</strong></h6></a>
+                                <hr>
+                                <div class="team-social">
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/facebook.svg' %}">
+                                    </a>
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/whatsapp.svg' %}">
+                                    </a>
+                                    <a href="#" class="social-box">
+                                        <img src="{% static 'svg/twitter.svg' %}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br>
+                    <center>
+                    <div class="col-md-3 mt-5">
+                    <a href="doctorlist.html" class="btn btn-solid btn-md">See more</a>
+                </div>
+            </center>
+        </div>
+    </div>
+    
+</section> {% endcomment %}
+<!-- Doctors end -->
+    <!-- testimonial section start -->
+    <section class="testimonial-section section-pb-space section-pt-space single-feature-section overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-sec">
+                        <h4>testimonial</h4>
+                        <h3>see what our client says</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row testimonial-space">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="testimonial-vector">
+                        <div class="round">
+                            <span></span>
+                            <img src="{% static 'images/company-landing/logo-new.png' %}" class="img-fluid "
+                                alt="" width="200" height="100">
+                        </div>
+                        <div class="users-sec">
+                            <div class="user-box wow zoomIn" data-wow-delay="0.10s">
+                                <div class="content">
+                                    <h6>best UI Design</h6>
+                                </div>
+                                <div class="img">
+                                    <img src="{% static 'images/user-sm/1.jpg' %}" class="img-fluid " alt="">
+                                </div>
+                            </div>
+                            <div class="user-box user2 wow zoomIn" data-wow-delay="0.15s">
+                                <div class="img">
+                                    <img src="{% static 'images/user-sm/2.jpg' %}" class="img-fluid " alt="">
+                                </div>
+                                <div class="content bottom">
+                                    <h6>cool app</h6>
+                                </div>
+                            </div>
+                            <div class="user-box user3 wow zoomIn" data-wow-delay="0.20s">
+                                <div class="img">
+                                    <img src="{% static 'images/user-sm/3.jpg' %}" class="img-fluid " alt="">
+                                </div>
+                                <div class="content bottom">
+                                    <h6>love to use</h6>
+                                </div>
+                            </div>
+                            <div class="user-box user4 wow zoomIn" data-wow-delay="0.25s">
+                                <div class="content">
+                                    <h6>best app</h6>
+                                </div>
+                                <div class="img">
+                                    <img src="{% static 'images/user-sm/4.jfif' %}" class="img-fluid " alt="">
+                                </div>
+                            </div>
+                            <div class="user-box user5 wow zoomIn" data-wow-delay="0.30s">
+                                <div class="content">
+                                    <h6>best app</h6>
+                                </div>
+                                <div class="img">
+                                    <img src="{% static 'images/user-sm/5.jfif' %}" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="feature-content">
+                        <div>
+                            <h3 class="title">our client's reviews</h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of
+                                a page when looking at its layout. The point of using Lorem Ipsum is a more-or-less.</p>
+                            <div class="user-section">
+                                <ul>
+                                    <li>
+                                        <img src="{% static 'images/user-sm/1.jpg' %}" class="img-fluid "
+                                            alt="">
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/user-sm/2.jpg' %}" class="img-fluid "
+                                            alt="">
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/user-sm/3.jpg' %}" class="img-fluid "
+                                            alt="">
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/user-sm/4.jfif' %}" class="img-fluid "
+                                            alt="">
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/user-sm/5.jfif' %}" class="img-fluid "
+                                            alt="">
+                                    </li>
+                                    <li>
+                                        <img src="{% static 'images/user-sm/6.jfif' %}" class="img-fluid "
+                                            alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="count-status">
+                                <ul>
+                                    <li>
+                                        <h4>1M+</h4>
+                                        <h6>total users</h6>
+                                    </li>
+                                    <li>
+                                        <h4>50+</h4>
+                                        <h6>unique features</h6>
+                                    </li>
+                                    <li>
+                                        <h4>10K+</h4>
+                                        <h6>user reviews</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="animation-home">
+            <div class="cross"></div>
+            <div class="cross cross1"></div>
+            <div class="tringle"></div>
+            <div class="tringle tringle1"></div>
+            <div class="circle"></div>
+        </div>
+    </section>
+    <!-- testimonial section end -->
+
+
+    <!-- blog section start -->
+    <section class="section-pb-space section-pt-space landing-bg blog-wrapper overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-sec">
+                        <h4>blogs</h4>
+                        <h3>our latest posts</h3>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="slider-section ratio2_3">
+                        <div class="blog-slider default-space-lg no-arrow">
+                            <div>
+                                <div class="blog-wrap">
+                                    <div class="blog-image">
+                                        <a href="#" data-tilt="" data-tilt-perspective="110" data-tilt-speed="400"
+                                            data-tilt-max="1.2">
+                                            <img src="{% static 'images/blog/1.svg' %}"
+                                                class="img-fluid  bg-img" alt="">
+                                        </a>
+                                        <div class="blog-label">
+                                            <h6><i class="iw-15 ih-15" data-feather="heart"></i>10</h6>
+                                            <h6><i class="iw-16 ih-16" data-feather="message-circle"></i>5</h6>
+                                        </div>
+                                        <h3 class="title">fashion shoot</h3>
+                                    </div>
+                                    <div class="blog-details">
+                                        <a href="#">
+                                            <h5>increase your valuemee followers - post, like, comments</h5>
+                                        </a>
+                                        <div class="detail">
+                                            <h6><i class="iw-15 ih-15" data-feather="user"></i>page turner</h6>
+                                            <h6><i class="iw-15 ih-15" data-feather="clock"></i>20 June, 2022</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="blog-wrap">
+                                    <div class="blog-image">
+                                        <a href="#" data-tilt="" data-tilt-perspective="110" data-tilt-speed="400"
+                                            data-tilt-max="1.2">
+                                            <img src="{% static 'images/blog/2.svg' %}"
+                                                class="img-fluid  bg-img" alt="">
+                                        </a>
+                                        <div class="blog-label">
+                                            <h6><i class="iw-15 ih-15" data-feather="heart"></i>10</h6>
+                                            <h6><i class="iw-16 ih-16" data-feather="message-circle"></i>5</h6>
+                                        </div>
+                                        <h3 class="title">fashion shoot</h3>
+                                    </div>
+                                    <div class="blog-details">
+                                        <a href="#">
+                                            <h5>increase your valuemee followers - post, like, comments</h5>
+                                        </a>
+                                        <div class="detail">
+                                            <h6><i class="iw-15 ih-15" data-feather="user"></i>page turner</h6>
+                                            <h6><i class="iw-15 ih-15" data-feather="clock"></i>20 June, 2022</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="blog-wrap">
+                                    <div class="blog-image">
+                                        <a href="#" data-tilt="" data-tilt-perspective="110" data-tilt-speed="400"
+                                            data-tilt-max="1.2">
+                                            <img src="{% static 'images/blog/3.svg' %}"
+                                                class="img-fluid  bg-img" alt="">
+                                        </a>
+                                        <div class="blog-label">
+                                            <h6><i class="iw-15 ih-15" data-feather="heart"></i>10</h6>
+                                            <h6><i class="iw-16 ih-16" data-feather="message-circle"></i>5</h6>
+                                        </div>
+                                        <h3 class="title">fashion shoot</h3>
+                                    </div>
+                                    <div class="blog-details">
+                                        <a href="#">
+                                            <h5>increase your valuemee followers - post, like, comments</h5>
+                                        </a>
+                                        <div class="detail">
+                                            <h6><i class="iw-15 ih-15" data-feather="user"></i>page turner</h6>
+                                            <h6><i class="iw-15 ih-15" data-feather="clock"></i>20 June, 2022</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="blog-wrap">
+                                    <div class="blog-image">
+                                        <a href="#" data-tilt="" data-tilt-perspective="110" data-tilt-speed="400"
+                                            data-tilt-max="1.2">
+                                            <img src="{% static 'images/blog/4.jpg' %}"
+                                                class="img-fluid  bg-img" alt="">
+                                        </a>
+                                        <div class="blog-label">
+                                            <h6><i class="iw-15 ih-15" data-feather="heart"></i>10</h6>
+                                            <h6><i class="iw-16 ih-16" data-feather="message-circle"></i>5</h6>
+                                        </div>
+                                        <h3 class="title">fashion shoot</h3>
+                                    </div>
+                                    <div class="blog-details">
+                                        <a href="#">
+                                            <h5>increase your valuemee followers - post, like, comments</h5>
+                                        </a>
+                                        <div class="detail">
+                                            <h6><i class="iw-15 ih-15" data-feather="user"></i>page turner</h6>
+                                            <h6><i class="iw-15 ih-15" data-feather="clock"></i>20 June, 2022</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <center>
+                    <div class="col-md-3 mt-5">
+                    <a href="blog.html" class="btn btn-solid btn-md">See more</a>
+                </div>
+            </center>
+            </div>
+        </div>
+        <div class="animation-home">
+            <div class="cross"></div>
+            <div class="cross cross1"></div>
+            <div class="tringle"></div>
+            <div class="tringle tringle1"></div>
+            <div class="circle"></div>
+        </div>
+    </section>
+    <!-- blog section end -->
+
+
+    
+
+
+    <!-- tap to top -->
+    <div class="tap-top">
+        <div>
+            <i class="fa fa-angle-double-up"></i>
+        </div>
+    </div>
+    <!-- tap to top End -->
+
+    
+    
+
+    <!-- latest jquery-->
+   
+    {% endblock content %}

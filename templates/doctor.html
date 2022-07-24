@@ -1,0 +1,231 @@
+{% extends 'base.html' %}
+{% block title %}
+Doctor : Valuemee
+{% endblock title %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <!-- loader start -->
+    <div class="loading-text">
+        <div>
+            <h1 class="animate">Loading</h1>
+        </div>
+    </div>
+    <!-- loader end -->
+
+
+    <section class="breadcrumb-section">
+        <img src="{% static 'images/doctor/doctor-head.jpg' %}" class="img-fluid  bg-img" alt="">
+       
+        <div class="help-search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 col-12 m-auto">
+                        <h2>Find best Doctors near you!!</h2>
+                        <form>
+                            <input type="search" class="form-control" placeholder="Search something here...">
+                            <span>popular topics: privacy, security, profile</span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- team section start -->
+    <section class="default-space-lg landing-bg section-pt-space section-pb-space">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-5">
+                                <div class="doc-image">
+                                    <img src="{% static 'images/doctor/doc-4.jpg' %}" class="img-fluid  bg-img"
+                                        alt="" width="">
+                                </div>
+                                <div class="available-content">
+                                    <h3>Available <img src="{% static 'images/doctor/doc-icon-6.svg' %}"></h3>
+                                </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="doc-section">
+                        <div class="doc-content">
+                            <h3><img src="{% static 'images/doctor/doc-icon-1.svg' %}">&nbsp;&nbsp;&nbsp;&nbsp;Dr. Priyank Agarwal </h3>
+                            <h3><img src="{% static 'images/doctor/doc-icon-2.svg' %}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MBBS, MD (London)</h3>
+                            <h3><img src="{% static 'images/doctor/doc-icon-3.svg' %}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avarage Fees : Rs. 500/- <span style="color: #00b473;">Verified <img src="{% static 'images/doctor/doc-icon-5.svg' %}"></span></h3>
+                            <h3><img src="{% static 'images/doctor/doc-icon-4.svg' %}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ring Rd, Udhana Darwaja, Aman Nagar, Surat, Gujarat 395008</h3>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            <form class="theme-form" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <input class="btn btn-solid submit-btn" type="submit" value="Post">
+            </form>
+            </div>
+        </div>
+        
+    </section>
+    <!-- team section end -->
+
+
+    <!--Chambers and timimngs-->
+
+    {% comment %} <section class="default-space-lg landing-bg section-pt-space section-pb-space">
+        <div class="container">
+            <div class="row" style="align-items:center">
+                <div class="col-md-6 mt-5">
+                    <div class="doc-section">
+                        <div class="doc-content">
+                            <h3>
+                                <img src="{% static 'images/doctor/doc-icon-8.svg' %}">&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class="select-chamber">
+                                    <select name="Chambers" id="Chambers">
+                                        <option value="Arogya Medical Hall" selected>Arogya Medical Hall</option>
+                                        <option value="ESI Hospita">ESI Hospital</option>
+                                        <option value="M.G Medical Camp">M.G Medical Camp</option>
+                                    </select>
+                                    </span>
+                            </h3>
+                            <h3><img src="{% static 'images/doctor/doc-icon-4.svg' %}">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ring Rd, Udhana Darwaja, Aman Nagar, Surat, Gujarat 395008</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <table class="table-des">
+                        <thead>
+                          <tr class="tr-des">
+                            <th class="th-des">Days</th>
+                            <th class="th-des">Available</th>
+                            <th class="th-des">Book Now</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="tr-des">
+                            <td class="td-des" data-column="Days">Sunday</td>
+                            <td class="td-des" data-column="timing">Close</td>
+                            <td class="td-des" data-column="book">  <a href="blog.html" class="btn btn-solid btn-md">Book Now</a></td>
+                          </tr>
+                          <tr class="tr-des">
+                            <td class="td-des" data-column="Days">Monday</td>
+                            <td class="td-des" data-column="timing">9:00 AM To 5:00 PM</td>
+                            <td class="td-des" data-column="book"> <a href="blog.html" class="btn btn-solid btn-md">Book Now</a></td>
+                          </tr>
+                          <tr class="tr-des">
+                            <td class="td-des" data-column="Days">Tuesday</td>
+                            <td class="td-des" data-column="timing">9:00 AM to 1:00 PM</td>
+                            <td class="td-des" data-column="book">  <a href="blog.html" class="btn btn-solid btn-md">Book Now</a></td>
+                          </tr>
+                          <tr class="tr-des">
+                            <td class="td-des" data-column="Days">Wednesday</td>
+                            <td class="td-des" data-column="timing">9:00 AM to 1:00 PM</td>
+                            <td class="td-des" data-column="book">  <a href="blog.html" class="btn btn-solid btn-md">Book Now</a></td>
+                          </tr>
+                          <tr class="tr-des">
+                            <td class="td-des" data-column="Days">Thursday</td>
+                            <td class="td-des" data-column="timing">9:00 AM to 1:00 PM</td>
+                            <td class="td-des" data-column="book">  <a href="blog.html" class="btn btn-solid btn-md">Book Now</a></td>
+                          </tr>
+                          <tr class="tr-des">
+                            <td class="td-des" data-column="Days">Friday</td>
+                            <td class="td-des" data-column="timing">9:00 AM to 1:00 PM</td>
+                            <td class="td-des" data-column="book">  <a href="blog.html" class="btn btn-solid btn-md">Book Now</a></td>
+                          </tr>
+                          <tr class="tr-des">
+                            <td class="td-des" data-column="Days">Saturday</td>
+                            <td class="td-des" data-column="timing">9:00 AM to 1:00 PM</td>
+                            <td class="td-des" data-column="book">  <a href="blog.html" class="btn btn-solid btn-md">Book Now</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+            </div>
+        </div>
+    </section> {% endcomment %}
+
+    <!--Chambers and timimngs-->
+
+
+
+    <!-- Doctors list start -->
+    <section class="default-space-lg landing-bg section-pt-space section-pb-space">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-sec">
+                        <h4>Valuemee</h4>
+                        <h3>Welcome To Our New Life Savers</h3>
+                    </div>
+                </div>
+                {% for ps in posts %}
+                        <div class="col-md-3">
+                            <div class="team-section">
+                                <a href="doctor.html">
+                                {% if ps.image %}
+                                <div class="team-image">
+                                    <img src="{{ ps.image.url }}" class="img-fluid  bg-img"
+                                        alt="">
+                                </div>
+                                {% endif %}
+                                </a>
+                                <div class="team-content">
+                                    <a href="doctor.html"><h3><img src="{% static 'images/doctor/doc.svg' %}">&nbsp;&nbsp;{{ ps.name }}</h3>
+                                    <h6><img src="{% static 'images/doctor/doc-deg.svg' %}">&nbsp;&nbsp;{{ ps.profiles }}</h6>
+                                    <hr>
+                                    <h6>Experience<strong>&nbsp;{{ ps.experience }} Years</strong></h6></a>
+                                    <hr>
+                                    <div class="team-social">
+                                        <a href="#" class="social-box">
+                                            <img src="{% static 'svg/facebook.svg' %}">
+                                        </a>
+                                        <a href="#" class="social-box">
+                                            <img src="{% static 'svg/whatsapp.svg' %}">
+                                        </a>
+                                        <a href="#" class="social-box">
+                                            <img src="{% static 'svg/twitter.svg' %}">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        {% endfor %}
+                        <nav aria-label="Page navigation example" class="pagination-section mt-5">
+                            <ul class="pagination theme-pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="javascript:void(0)" aria-label="Previous"><i
+                                            class="iw-15 ih-15" data-feather="chevron-left"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <i class="iw-15 ih-15" data-feather="chevron-right"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+            </div>
+        </div>
+        
+    </section>
+    <!-- Doctors list end -->
+
+
+
+    <!-- tap to top -->
+    <div class="tap-top">
+        <div>
+            <i class="fa fa-angle-double-up"></i>
+        </div>
+    </div>
+    <!-- tap to top End -->
+    {% endblock content %}
+
