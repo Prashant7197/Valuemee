@@ -1,0 +1,309 @@
+{% extends 'base.html' %}
+{% block title %}
+Blog-Details: Valuemee
+{% endblock title %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <!-- loader start -->
+    <div class="loading-text">
+        <div>
+            <h1 class="animate">Loading</h1>
+        </div>
+    </div>
+    <!-- loader end -->
+
+
+    <!-- header section start -->
+    
+
+    <!-- breadcrumb section start -->
+    <section class="breadcrumb-section breadcrumb-sm">
+        <img src="{% static 'images/blog/header.jpg' %}" class="img-fluid   bg-img" alt="">
+        
+        <div class="help-search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 col-12 m-auto">
+                        <h2>Blog</h2>
+                        <nav aria-label="breadcrumb ">
+                            <ol class="breadcrumb theme-breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Library</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb section end -->
+
+
+    <!-- blog detail section start -->
+    <section class="section-pb-space section-pt-space bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 order-lg-1">
+                    <div class="blog-single-detail">
+                        <div class="top-image">
+                            <img src="{% static 'images/blog/1.svg' %}" alt="" class="img-fluid   bg-img">
+                            <div class="blog-label">
+                                <h6><i class="iw-13 ih-13" data-feather="heart"></i>10</h6>
+                                <h6><i class="iw-14 ih-14" data-feather="message-circle"></i>5</h6>
+                            </div>
+                        </div>
+                        <div class="blog-details">
+                            <div class="detail">
+                                <h6><i class="iw-15 ih-15" data-feather="user"></i>page turner</h6>
+                                <h6><i class="iw-15 ih-15" data-feather="clock"></i>20 June, 2021</h6>
+                            </div>
+                            <a href="#">
+                                <h2>increase your valuemee followers - post, like, comments</h2>
+                            </a>
+                        </div>
+                        <div class="detail-part">
+                            <p>Your first step in how to start planning a trip is to choose a travel destination that
+                                meets your interests and travel budget.Are you planning overseas travel or a domestic
+                                trip at home? Either way, the whole idea of taking
+                                a trip is to have a memorable time, to have fun and relax, and not to spend your whole
+                                vacation time worrying about money.If you only have 1-2 weeks of vacation time per year,
+                                don’t waste too much of that time traveling
+                                to and from your destination. Plan your trip accordingly.But if you have 2-4 weeks or
+                                over a month you can look at taking an overseas trip or traveling further within your
+                                home country.</p>
+                            <p>Once you have chosen your destination, step two in planning a trip is to book your
+                                flights. And learning how to find cheap flights will help you to reduce one of your
+                                biggest travel expenses. As a traveling family, if it’s
+                                an overseas trip and a long haul flight I like to plan my trip so we get to our
+                                destination as quickly as possible, with the most amount of comfort and facilities our
+                                budget allows! If it’s your one-and-only dream vacation
+                                for the year, and you only have 1-2 weeks, I recommend you pay the little bit extra for
+                                a premium airline and fly direct too!</p>
+                            <p>Another thing to consider when planning a trip is to find out the transportation options
+                                in your chosen destination. Will you need to book a rental car or pre-purchase any
+                                transportation passes online? Is there a train or bus
+                                service? Are there taxis or Uber? Can you simply walk to most places?
+                            </p>
+                            <p>When you plan a trip you’ll want to know what are the must-visit tourist attractions and
+                                the best free things to do in your chosen destination. As much as we like to just show
+                                up, some trip planning is a good idea especially
+                                if you are visiting a popular destination in the peak travel season.</p>
+                        </div>
+                        <div class="blog-comment">
+                            <h3 class="comment">comments:</h3>
+                            <div class="comment-wrapper">
+                            {% for post in posts %}
+                                <div class="comment-box">
+                                    <div class="media">
+                                    
+                                        <img src="{% static 'images/doctor.png' %}"
+                                            class="img-fluid" alt="">
+                                        
+                                        <div class="media-body">
+                                            <div class="title">
+                                                <div class="comment-user">
+                                                    <i class="iw-13 ih-13" data-feather="user"></i>
+                                                    <h6 style="font-weight: bold; font-size:16px;">{{ post.title }}</h6>
+                                                </div>
+                                                <div class="comment-date">
+                                                    <i class="iw-13 ih-13" data-feather="clock"></i>
+                                                    <h6 style="font-weight: bold;"> {{ post.date_created }} </h6>
+                                                </div>
+                                            </div>
+                                            <div class="comment-detail">
+                                                <p>
+                                                {{ post.content }}
+                                                </p>
+                                            </div>
+                                            <div class="reply-btn">
+                                                <a href="#"><i class="iw-15 ih-15" data-feather="corner-up-left"></i>
+                                                    reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% comment %} <div class="media inner-comment">
+                                        <img src="{% static 'images/user-sm/2.jpg' %}" class="img-fluid "
+                                            alt="">
+                                        <div class="media-body">
+                                            <div class="title">
+                                                <div class="comment-user">
+                                                    <i class="iw-13 ih-13" data-feather="user"></i>
+                                                    <h6>{{ post.title }}</h6>
+                                                </div>
+                                                <div class="comment-date">
+                                                    <i class="iw-13 ih-13" data-feather="clock"></i>
+                                                    <h6> {{post.date}} </h6>
+                                                </div>
+                                            </div>
+                                            <div class="comment-detail">
+                                                <p> 
+                                                {{ post.content }}
+                                                </p>
+                                            </div>
+                                            <div class="reply-btn">
+                                                <a href="#"><i class="iw-15 ih-15" data-feather="corner-up-left"></i>
+                                                    reply</a>
+                                            </div>
+                                        </div>
+                                    </div> {% endcomment %}
+                                    
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="leave-comment">
+                            <h3 class="comment">leave a comment</h3>
+                            <form class="theme-form" method="POST">
+                                {% csrf_token %}
+                                {{ form|crispy }}
+                                <input class="btn btn-solid submit-btn" type="submit" value="Post">
+                                {% comment %} <div class="submit-btn">
+                                    <button class="btn btn-solid" type="submit">post comment</button>
+                                </div> {% endcomment %}
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 order-lg-0">
+                    <div class="sticky-cls-top">
+                        <div class="blog-sidebar">
+                            <div class="blog-wrapper">
+                                <div class="search-bar">
+                                    <input type="text" placeholder="Search here..">
+                                    <i class="iw-16 ih-16" data-feather="search"></i>
+                                </div>
+                            </div>
+                            <div class="blog-wrapper">
+                                <div class="sidebar-title">
+                                    <h3>categories</h3>
+                                </div>
+                                <div class="sidebar-content">
+                                    <ul class="sidebar-list">
+                                        <li class="">
+                                            <a href="#">
+                                                <i aria-hidden="true" class="fa fa-angle-right"></i>Lorem Ipsum Is
+                                                Simple
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">
+                                                <i aria-hidden="true" class="fa fa-angle-right"></i>Many Variations
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">
+                                                <i aria-hidden="true" class="fa fa-angle-right"></i>random text
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">
+                                                <i aria-hidden="true" class="fa fa-angle-right"></i>lorem ipsum.
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">
+                                                <i aria-hidden="true" class="fa fa-angle-right m-r-15"></i>it's Random.
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="blog-wrapper">
+                                <div class="sidebar-title">
+                                    <h3>popular post</h3>
+                                </div>
+                                <div class="sidebar-content">
+                                    <ul class="blog-post">
+                                        <li>
+                                            <div class="media">
+                                                <a href="#"><img class="img-fluid   "
+                                                        src="{% static 'images/blog/1.svg' %}"
+                                                        alt="Generic placeholder image"></a>
+                                                <div class="media-body align-self-center">
+                                                    <div>
+                                                        <h5><i data-feather="clock" class="iw-12 ih-12"></i>25 Dec 2018
+                                                        </h5>
+                                                        <h5><i data-feather="heart" class="iw-12 ih-12"></i>100
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <a href="#"><img class="img-fluid   "
+                                                        src="{% static 'images/blog/2.svg' %}"
+                                                        alt="Generic placeholder image"></a>
+                                                <div class="media-body align-self-center">
+                                                    <div>
+                                                        <h5><i data-feather="clock" class="iw-12 ih-12"></i>25 Dec 2018
+                                                        </h5>
+                                                        <h5><i data-feather="heart" class="iw-12 ih-12"></i>100
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <a href="#"><img class="img-fluid   "
+                                                        src="{% static 'images/blog/3.svg' %}"
+                                                        alt="Generic placeholder image"></a>
+                                                <div class="media-body align-self-center">
+                                                    <div>
+                                                        <h5><i data-feather="clock" class="iw-12 ih-12"></i>25 Dec 2018
+                                                        </h5>
+                                                        <h5><i data-feather="heart" class="iw-12 ih-12"></i>100
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <a href="#"><img class="img-fluid   "
+                                                        src="{% static 'images/blog/4.jpg' %}"
+                                                        alt="Generic placeholder image"></a>
+                                                <div class="media-body align-self-center">
+                                                    <div>
+                                                        <h5><i data-feather="clock" class="iw-12 ih-12"></i>25 Dec 2018
+                                                        </h5>
+                                                        <h5><i data-feather="heart" class="iw-12 ih-12"></i>100
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="blog-wrapper">
+                                <div class="sidebar-title">
+                                    <h3>popular tags</h3>
+                                </div>
+                                <div class="sidebar-content">
+                                    <ul class="tags">
+                                        <li><a href="#">adventure</a></li>
+                                        <li><a href="#">luxury</a></li>
+                                        <li><a href="#">romantic</a></li>
+                                        <li><a href="#">foodie</a></li>
+                                        <li><a href="#">villas</a></li>
+                                        <li><a href="#">cruise</a></li>
+                                        <li><a href="#">shopping</a></li>
+                                        <li><a href="#">beach</a></li>
+                                        <li><a href="#">family</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog detail section end -->
+    {% endblock content %}
+
+    
